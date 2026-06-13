@@ -381,32 +381,6 @@
     color: var(--text-dim);
   }
 
-  /* DOMAIN NOTE */
-  .domain-note {
-    background: rgba(34,211,238,0.05);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1.5rem;
-    margin-top: 3rem;
-    font-size: 0.88rem;
-  }
-  .domain-note strong {
-    font-family: var(--font-mono);
-    color: var(--cyan);
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-  }
-  .domain-note p { color: var(--text-muted); margin: 0; }
-  .domain-note code {
-    font-family: var(--font-mono);
-    font-size: 0.82rem;
-    color: var(--cyan);
-    background: rgba(34,211,238,0.1);
-    padding: 0.1rem 0.4rem;
-    border-radius: 2px;
-  }
 
   @media (max-width: 680px) {
     nav { padding: 1rem 1.25rem; }
@@ -694,39 +668,6 @@
       <a href="https://github.com/jideoforchika7-glitch" target="_blank" class="btn-outline">GitHub</a>
       <a href="https://linkedin.com/in/chika-jideofor" target="_blank" class="btn-outline">LinkedIn</a>
     </div>
-  </div>
-
-  <!-- GITHUB PAGES + NAMECHEAP SETUP GUIDE -->
-  <div class="domain-note">
-    <strong>// SETUP GUIDE — GitHub Pages + Namecheap Custom Domain</strong>
-    <p style="margin-bottom:0.75rem">After uploading this file as your GitHub Pages site, follow these steps to connect your Namecheap domain:</p>
-    <ol style="color:var(--text-muted);font-size:0.86rem;padding-left:1.25rem;line-height:2">
-      <li>In your GitHub repo → <strong>Settings → Pages</strong>, set source branch to <code>main</code> and enter your custom domain (e.g. <code>yourname.online</code>)</li>
-      <li>In Namecheap → <strong>Domain List → Manage → Advanced DNS</strong>, add these records:</li>
-    </ol>
-    <table style="width:100%;margin:0.75rem 0 0.75rem;font-family:'JetBrains Mono',monospace;font-size:0.78rem;border-collapse:collapse;">
-      <tr style="color:var(--text-dim);">
-        <td style="padding:0.3rem 1rem 0.3rem 0">Type</td>
-        <td style="padding:0.3rem 1rem 0.3rem 0">Host</td>
-        <td style="padding:0.3rem 1rem 0.3rem 0">Value</td>
-      </tr>
-      <tr style="color:var(--cyan);">
-        <td style="padding:0.2rem 1rem 0.2rem 0">A</td><td style="padding:0.2rem 1rem 0.2rem 0">@</td><td>185.199.108.153</td>
-      </tr>
-      <tr style="color:var(--cyan);">
-        <td style="padding:0.2rem 1rem 0.2rem 0">A</td><td style="padding:0.2rem 1rem 0.2rem 0">@</td><td>185.199.109.153</td>
-      </tr>
-      <tr style="color:var(--cyan);">
-        <td style="padding:0.2rem 1rem 0.2rem 0">A</td><td style="padding:0.2rem 1rem 0.2rem 0">@</td><td>185.199.110.153</td>
-      </tr>
-      <tr style="color:var(--cyan);">
-        <td style="padding:0.2rem 1rem 0.2rem 0">A</td><td style="padding:0.2rem 1rem 0.2rem 0">@</td><td>185.199.111.153</td>
-      </tr>
-      <tr style="color:var(--cyan);">
-        <td style="padding:0.2rem 1rem 0.2rem 0">CNAME</td><td style="padding:0.2rem 1rem 0.2rem 0">www</td><td>YOUR_GITHUB_USERNAME.github.io</td>
-      </tr>
-    </table>
-    <p style="margin:0">3. Back in GitHub Pages, click <strong>Enforce HTTPS</strong> once DNS propagates (up to 24–48 hrs). Then create a file called <code>CNAME</code> in your repo root containing just your domain name.</p>
   </div>
 </section>
 
